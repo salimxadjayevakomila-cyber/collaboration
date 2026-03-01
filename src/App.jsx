@@ -1,5 +1,6 @@
-import { Card, Navbar} from '@material-tailwind/react'
 import React from 'react'
+import { NavbarSimple } from './components/Navbar'
+import {  Card } from './pages/Card'
 
 
 const App = () => {
@@ -7,7 +8,8 @@ const App = () => {
     <div>
      <Routes>
       <Route path="/" element={<Card/>}>
-      <Route path='/' element={<Navbar/>}/>
+      <Route path='/' element={< NavbarSimple/>}/>
+      <Route path='/' element={<Layout/>}/>
         
       </Route>
      </Routes>

@@ -25,7 +25,7 @@ export function Card() {
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <Button>Submit</Button>
+                <Button>Buy</Button>
             </CardFooter>
         </Card>
     );
