@@ -1,12 +1,11 @@
- import React from 'react'
-import { StickyNavbar } from './components/Navbar'
- 
- const App = () => {
-   return (
-     <div>
-   <StickyNavbar/>
-      </div>
-   )
- }
- 
- export default App
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default App
