@@ -2,31 +2,31 @@ import {
     Card,
     CardHeader,
     CardBody,
+    CardFooter,
     Typography,
+    Button,
 } from "@material-tailwind/react";
 
-export function ProductCard() {
+export function Card() {
     return (
-        <Card className="w-96">
-            <CardHeader shadow={false} floated={false} className="h-96">
+        <Card className="mt-6 w-96">
+            <CardHeader color="blue-gray" className="relative h-56">
                 <img
-                    src={img}
+                    src="https://i.pinimg.com/736x/67/1a/dd/671add85718e4ddc70df0a7ff7621c6a.jpg"
                     alt="card-image"
-                    className="h-full w-full object-cover"
                 />
             </CardHeader>
             <CardBody>
-                <div className="mb-2 flex items-center justify-between">
-                    <Typography color="blue-gray" className="font-medium">
-                        {name}
-                    </Typography>
-                    <Typography color="blue-gray" className="font-medium">
-                        {price}
-                    </Typography>
-                </div>
+                <Typography variant="h5" color="blue-gray" className="mb-2">
+                    Starbucks Frappucionos
+                </Typography>
+                <Typography>
+                    This unique Starbucks drink features a coffee pudding base infused with Irish cream flavor, and it's topped with espresso whipped cream and ground espresso powder.
+                </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+                <Button>Submit</Button>
+            </CardFooter>
         </Card>
     );
 }
-
-export default ProductCard

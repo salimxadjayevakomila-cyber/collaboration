@@ -1,10 +1,16 @@
+import { Card, Navbar} from '@material-tailwind/react'
 import React from 'react'
-import {  ProductCard } from './pages/Card'
+
 
 const App = () => {
   return (
     <div>
-      <ProductCard/>
+     <Routes>
+      <Route path="/" element={<Card/>}>
+      <Route path='/' element={<Navbar/>}/>
+        
+      </Route>
+     </Routes>
     </div>
   )
 }
